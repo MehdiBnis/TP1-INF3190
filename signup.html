@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jungle Fever - S'inscrire</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo-site" src="img/logo.png" alt="Jungle Fever - Logo">
+            <h1>Jungle Fever</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="nav-items" href="index.html">Accueil</a></li>
+                    <li><a class="nav-items" href="resume.html">Notre objectif</a></li>
+                    <li><a class="nav-items" href="partners.html">Nos partenaires</a></li>
+                    <li><a class="nav-items" href="signup.html">S'inscrire</a></li>
+                    <li><a class="nav-items" href="contact.html">Nous joindre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-inscription">
+            <form>
+                <h2>Informations personnelles :</h2>
+                <label for="prenom">Prénom :</label><br>
+                <input type="text" id="prenom" name="prenom" required><br>
+
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" required><br>
+                
+                <label for="courriel">Courriel :</label><br>
+                <input type="text" id="courriel" name="courriel" required>
+
+                <div class="liste-selection">
+                    <h2>Province (Canada seulement) :</h2>
+                    <select name="provinces" required>
+                        <option value="">-- </option>
+                        <!-- Assurez-vous que chaque option a une valeur pour la validation HTML. -->
+                        <option value="AB">Alberta</option>
+                        <option value="BC">Colombie-Britannique</option>
+                        <option value="PE">Île-du-Prince-Édouard</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">Nouveau-Brunswick</option>
+                        <option value="NS">Nouvelle-Écosse</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="ON">Ontario</option>
+                        <option value="QC">Québec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="NL">Terre-Neuve-et-Labrador</option>
+                        <option value="NT">Territoires du Nord-Ouest</option>
+                        <option value="NL">Yukon</option>
+                    </select>
+                </div>
+                <br>
+
+                <div class="radio-selection">
+                    <h2>Zone d'intérêt :</h2>
+                    <input type="radio" id="afrique-centre" name="zone" value="afrique-centre" checked required>
+                    <label for="afrique-centre">Afrique centrale</label><br>
+                    <input type="radio" id="amerique-centre" name="zone" value="amerique-centre" required>
+                    <label for="amerique-centre">Amérique centrale</label><br>
+                    <input type="radio" id="amerique-sud" name="zone" value="amerique-sud" required>
+                    <label for="amerique-sud">Amérique du Sud</label><br>
+                    <input type="radio" id="asie-est" name="zone" value="asie-est" required>
+                    <label for="asie-est">Asie de l'Est</label><br>
+                    <input type="radio" id="asie-sud" name="zone" value="asie-sud" required>
+                    <label for="asie-sud">Asie du Sud</label><br>
+                </div>
+                <br>
+
+                <div class="check-selection">
+                    <input type="checkbox" id="veterinaire" name="veterinaire">
+                    <label for="veterinaire">Je suis vétérinaire et souhaite devenir bénévole.</label><br>
+
+                    <input type="checkbox" id="don" name="don">
+                    <label for="don">Je souhaite verser un don à l'association.</label><br>
+                    
+                    <br>
+                    <label for="montant">Montant (CAD$) :</label><br>
+                    <input type="text" id="montant" name="montant"><br>
+                </div>
+                <br>
+                
+                <div class="bouton-envoi">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

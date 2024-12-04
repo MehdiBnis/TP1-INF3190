@@ -1,0 +1,50 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    margin: 100;
+    padding: 100;
+    background-color: #d4ffff;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-site {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.nav-links {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.nav-items {
+    color: white;
+}
+
+main {
+    margin: 2.5%;
+}
+
+.article {
+    float: left;
+    width: 80%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+    border: 2px solid;
+}
+
+.article .auteur {
+    font-style: italic;
+}
+
+.main-inscription {
+    text-align: center;
+}
